@@ -1,1 +1,1 @@
-# mycodingtest-programmers
+# re:0から始まるコーディングテスト
