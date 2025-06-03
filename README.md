@@ -1,4 +1,4 @@
-# 🧑‍💻 Coding Test Practice  
+### 🧑‍💻 Coding Test Practice  
 ```
 Practice Coding Test with Baekjoon, programmers, etc.  
 Language: TypeScript, etc.
@@ -7,7 +7,10 @@ Language: TypeScript, etc.
 ---
 
 ### 🤙 Commit Convention
-[site] name(lv)
+```
+default: BaekjoonHub
+other: [site] name(lv)
+```
 
 ---
 
