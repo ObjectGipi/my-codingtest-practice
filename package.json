@@ -2,7 +2,7 @@
   "name": "my-codingtest-practice",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && node dist/index.js",
+    "20250610": "tsc && node dist/typescript/20250610_fourBasicOperations.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
