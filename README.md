@@ -25,3 +25,4 @@ other: [site] name(lv)
 | 20250610 | [두 수의 나머지↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120810) | Lv0 | Programmers | TypeScript |
 | 20250611 | [숫자 비교하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120807) | Lv0 | Programmers | TypeScript |
 | 20250611 | [분수의 덧셈↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120808) | Lv0 | Programmers | TypeScript |
+| 20250612 | [배열 두배 만들기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120809) | Lv0 | Programmers | TypeScript |
