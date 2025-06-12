@@ -4,6 +4,7 @@
   "scripts": {
     "20250610": "tsc && node dist/typescript/20250610_fourBasicOperations.js",
     "20250611": "tsc && node dist/typescript/20250611_Array.js",
+    "20250612": "tsc && node dist/typescript/20250612_Array2.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
