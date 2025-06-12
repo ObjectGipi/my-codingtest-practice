@@ -29,9 +29,7 @@ export class Calculator {
   public divisionAndRemainder = (): number[] => {
     let division: number = this.num1 / this.num2;
     const remainder: number = this.num1 % this.num2;
-
-    // 몫을 정수로만 출력하기 위해서 Math.floor 사용
-    return [Math.floor(division), remainder];
+    return [Math.floor(division), remainder]; // 몫을 정수로 출력하기 위해서 Math.floor 사용
   };
 }
 
@@ -44,7 +42,7 @@ console.log(
 두 수의 몫과 나머지: ${calculator.divisionAndRemainder()}`,
 );
 
-// 💡두 수의 합과 리턴값을 문자열로 해야한다면? ➡️ parseInt(), toString()
+// 💡파라미터와 리턴값의 타입을 문자열(string)로 해야한다면? ➡️ parseInt(), toString()
 const additionV2 = (num1: string, num2: string): string => {
   const parseIntNum1: number = parseInt(num1);
   const parseIntNum2: number = parseInt(num2);

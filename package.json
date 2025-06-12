@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "20250610": "tsc && node dist/typescript/20250610_fourBasicOperations.js",
+    "20250611": "tsc && node dist/typescript/20250611_Array.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
