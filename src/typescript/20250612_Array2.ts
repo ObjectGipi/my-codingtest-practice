@@ -4,7 +4,7 @@ const arrayDouble = (array: number[]): number[] => {
     // i번째 원소에 연산을 적용하고 변수에 담음
     const doubledElement = array[i] * 2;
 
-    // 💡각 원소를 새로운 배열에 담을때는 push
+    // 💡push: 각 원소를 새로운 배열에 담음
     answer.push(doubledElement);
   }
   return answer;
