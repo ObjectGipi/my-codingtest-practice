@@ -29,3 +29,4 @@ other: [site] name(lv)
 | 20250613 | [나머지 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120810) | Lv0 | Programmers | TypeScript |
 | 20250613 | [중앙값 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120811) | Lv0 | Programmers | TypeScript |
 | 20250614 | [복습] | Lv0 | Programmers | TypeScript |
+| 20250615 | [최빈값 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120812) | Lv0 | Programmers | TypeScript |
