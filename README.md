@@ -31,3 +31,4 @@ other: [site] name(lv)
 | 20250614 | [복습] | Lv0 | Programmers | TypeScript |
 | 20250615 | [최빈값 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120812) | Lv0 | Programmers | TypeScript |
 | 20250616 | [짝수는 싫어요↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120813) | Lv0 | Programmers | TypeScript |
+| 20250617 | [복습] | Lv0 | Programmers | TypeScript |

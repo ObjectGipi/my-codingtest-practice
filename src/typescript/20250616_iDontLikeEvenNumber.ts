@@ -13,13 +13,13 @@
 
 const iDontLikeEvenNumber = (n: number): number[] => {
   // n보다 작은수를 하나하나 보면서 나누기 2를 하고, 나머지가 1인 애들만 새로운 배열에 담음
-  let result: number[] = []
+  let result: number[] = [];
   for (let i: number = 1; i <= n; i = i + 1) {
     if (i % 2 === 1) {
-      result.push(i)
+      result.push(i);
     }
   }
   return result;
 };
 
-console.log(iDontLikeEvenNumber(15))
+console.log(iDontLikeEvenNumber(15));

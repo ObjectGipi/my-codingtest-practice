@@ -26,7 +26,7 @@ const fractionAddition = (
   let denom3: number = denom1 * denom2;
   let numer3: number = numer1 * denom2 + numer2 * denom1;
 
-  // 두 값중 더 작은 값을 minNumber에 담음
+  // 큰값 & 작은값 문법
   // 💡Math.min() -> 주어진 숫자중 가장 작은 값을 반환
   // 💡Math.max() -> 주어진 숫자중 가장 큰 값을 반환
   // 💡위 메서드를 배열에 사용하기 위해서는 (...배열 변수명) 즉, 스프레드 문법으로 작성해야함
@@ -61,7 +61,8 @@ const fractionAdditionV2 = (
   const denom3: number = denom1 * denom2;
   const numer3: number = numer1 * denom2 + numer2 * denom1;
 
-  // 💡유클리드 호제법(최대공약수 구하는 공식)
+  // 최대공약수 공식
+  // 💡유클리드 호제법
   // 1. 이전 값(b)을 저장하기 위해 temp 변수 추가
   // 2. b는 a % b 즉, 나머지
   // 3. a는 이전 b값
