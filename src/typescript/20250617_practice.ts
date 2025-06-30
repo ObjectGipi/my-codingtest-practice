@@ -32,10 +32,10 @@ const calculateModePrac = (array: number[]): number[] => {
   }
 
   // 정렬된 배열의 원소를 하나씩 세어서 최빈값과 반복된 횟수를 기록 및 갱신
-  let modeNumber: number = -1; // 최빈값
-  let modeNumberCnt: number = 0; // 최빈값이 반복된 횟수
-  let beforeNumber: number = -1; // 지금 보고있는 값의 이전값
-  let repeatCnt: number = 0; // 지금 보고있는 값이 반복된 횟수
+  let modeNumber: number = -1;    // 최빈값
+  let modeNumberCnt: number = 0;  // 최빈값이 반복된 횟수
+  let beforeNumber: number = -1;  // 지금 보고있는 값의 이전값
+  let repeatCnt: number = 0;      // 지금 보고있는 값이 반복된 횟수
   let isDupModeNumber: boolean = false;
   let cntSortedArray: number = 0;
 
@@ -60,6 +60,7 @@ const calculateModePrac = (array: number[]): number[] => {
 
     // 최빈값과 지금 보고있는 값의 반복되는 횟수가 같고, 값 자체는 다를 경우는 최빈값이 중복되는 경우이기 때문에,
     // isDupModeNumber를 true로 변경
+    if (repeatCnt === modeNumberCnt && modeNumber !== sortedArray[cntSortedArray]) {
       isDupModeNumber = true;
     }
 
@@ -67,6 +68,7 @@ const calculateModePrac = (array: number[]): number[] => {
     cntSortedArray = cntSortedArray + 1;
   }
   if (isDupModeNumber) {
+    return [0, -1]
   }
   return [modeNumber, modeNumberCnt];
 };
@@ -96,3 +98,6 @@ const iDontLikeEvenNumberPrac = (n: number): number[] => {
     cnt = cnt + 1;
   }
   return result;
+}
+
+console.log(iDontLikeEvenNumberPrac(10))

@@ -6,10 +6,6 @@ const fractionAdditionPrac = (
   denom2: number,
   numer2: number,
 ): number[] => {
-  // 두 분수 합치기
-  // 최대공배수 구하기
-  // 최대 공배수로 나누어서 배열에 담아 반환
-
   const denom3: number = denom1 * denom2;
   const numer3: number = denom1 * numer2 + denom2 * numer1;
 
