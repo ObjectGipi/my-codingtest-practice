@@ -60,10 +60,6 @@ const calculateModePrac = (array: number[]): number[] => {
 
     // 최빈값과 지금 보고있는 값의 반복되는 횟수가 같고, 값 자체는 다를 경우는 최빈값이 중복되는 경우이기 때문에,
     // isDupModeNumber를 true로 변경
-    if (
-      repeatCnt === modeNumberCnt &&
-      modeNumber !== sortedArray[cntSortedArray]
-    ) {
       isDupModeNumber = true;
     }
 
@@ -71,7 +67,6 @@ const calculateModePrac = (array: number[]): number[] => {
     cntSortedArray = cntSortedArray + 1;
   }
   if (isDupModeNumber) {
-    return [0, -1];
   }
   return [modeNumber, modeNumberCnt];
 };
@@ -101,6 +96,3 @@ const iDontLikeEvenNumberPrac = (n: number): number[] => {
     cnt = cnt + 1;
   }
   return result;
-};
-
-console.log(iDontLikeEvenNumberPrac(10));
