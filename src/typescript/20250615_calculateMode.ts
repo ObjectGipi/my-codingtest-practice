@@ -4,10 +4,10 @@
  * 최빈값이 여러 개면 [-1, 0]을 return 합니다.
  * 0 < array의 길이 < 100
  * 0 ≤ array의 원소 < 1000
-**/
+ **/
 
 const calculateMode = (array: number[]): number[] => {
-  let sortedArray: number[] = []
+  let sortedArray: number[] = [];
   let cntArray: number = 0;
 
   while (cntArray < array.length) {
@@ -36,15 +36,14 @@ const calculateMode = (array: number[]): number[] => {
   console.log(sortedArray);
 
   let cntSortedArray: number = 0;
-  let modeNumber: number = -1;    // 최빈값(원소로 들어갈 수 없는 -1이 디폴트)
-  let modeNumberCnt: number = 0;  // 최빈값이 될 때 값이 최빈값이 반복된 횟수
-  let beforeNumber: number = -1;  // 현재 보고있는 값의 이전값(배열의 숫자가 바뀌었는지 판단하는 용도, 원소로 들어갈 수 없는 -1이 디폴트)
-  let numberCnt: number = 0;      // 현재 보고있는 값이 반복된 횟수(최빈값이 반복된 횟수와 비교하는 용도)
+  let modeNumber: number = -1; // 최빈값(원소로 들어갈 수 없는 -1이 디폴트)
+  let modeNumberCnt: number = 0; // 최빈값이 될 때 값이 최빈값이 반복된 횟수
+  let beforeNumber: number = -1; // 현재 보고있는 값의 이전값(배열의 숫자가 바뀌었는지 판단하는 용도, 원소로 들어갈 수 없는 -1이 디폴트)
+  let numberCnt: number = 0; // 현재 보고있는 값이 반복된 횟수(최빈값이 반복된 횟수와 비교하는 용도)
   let isDupModeNumber: boolean = false; // 최빈값이 중복되는지 판단하는 용도
 
   // sortedArray의 원소갯수만큼 반복
   while (cntSortedArray < sortedArray.length) {
-
     // 현재 보고있는 값과 이전값이 다르다면 새로운 숫자가 등장했다는 뜻이기 때문에,
     // 현재 보고있는 값이 반복된 횟수를 1로 지정
     // 0번째 인덱스의 값은 무조건 1로 지정(왜? beforeNumber의 초기값이 -1이기 때문에)
@@ -84,9 +83,9 @@ const calculateMode = (array: number[]): number[] => {
 
   console.log(`최빈값이 여러개입니까? ${isDupModeNumber}`);
   if (isDupModeNumber) {
-    return [-1, 0]
+    return [-1, 0];
   }
   return [modeNumber, modeNumberCnt];
 };
 
-console.log(calculateMode([3, 1, 1, 1, 3, 1, 3, 3, 3, 3]))
+console.log(calculateMode([3, 1, 1, 1, 3, 1, 3, 3, 3, 3]));
