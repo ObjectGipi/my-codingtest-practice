@@ -16,7 +16,7 @@
  * | 1   | 1      |
  * | 15  | 3      |
  */
-const calPizzaPeople = (): number[] => {
+const calPizzaPeople1 = (): number[] => {
   let result: number[] = [];
   for (let i: number = 1; i <= 100; i = i + 1) {
     const quotient: number = Math.floor(i / 7);
@@ -34,7 +34,7 @@ const calPizzaPeople = (): number[] => {
   return result;
 };
 
-console.log(calPizzaPeople());
+console.log(calPizzaPeople1());
 
 // Math.ceil 사용
 const calPizzaPeople1UseCeil = (n: number): number => {
