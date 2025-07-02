@@ -12,6 +12,7 @@
     "20250617": "tsc && node dist/typescript/20250617_practice.js",
     "20250618": "tsc && node dist/typescript/20250618_calPizzaPeople1.js",
     "20250619": "tsc && node dist/typescript/20250619_calPizzaPeople2.js",
+    "20250620": "tsc && node dist/typescript/20250620_calPizzaPeople3.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,

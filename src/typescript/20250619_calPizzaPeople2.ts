@@ -18,7 +18,7 @@
 const calPizzaPeople2 = (n: number): number => {
   let result: number = 0;
 
-  // n명이 주어지면, 1명~n명까지 pizza를 나누어보다가 맨 처음 나머지가 0인 수가 정답
+  // n명이 주어지면, 1명 ~ n명까지 pizza * 6으로 나누어보다가 맨 처음 나머지가 0인 수가 필요한 pizza 갯수
   for (let pizza: number = 1; pizza <= n; pizza = pizza + 1) {
     if ((pizza * 6) % n === 0) {
       result = pizza;
