@@ -35,3 +35,4 @@ other: [site] name(lv)
 | 20250618 | [피자 나눠 먹기 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120814) | Lv0 | Programmers | TypeScript |
 | 20250619 | [피자 나눠 먹기 (2)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120815) | Lv0 | Programmers | TypeScript |
 | 20250620 | [피자 나눠 먹기 (3)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120816) | Lv0 | Programmers | TypeScript |
+| 20250621 | [배열의 평균값↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120817) | Lv0 | Programmers | TypeScript |
