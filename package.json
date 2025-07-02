@@ -13,6 +13,7 @@
     "20250618": "tsc && node dist/typescript/20250618_calPizzaPeople1.js",
     "20250619": "tsc && node dist/typescript/20250619_calPizzaPeople2.js",
     "20250620": "tsc && node dist/typescript/20250620_calPizzaPeople3.js",
+    "20250621": "tsc && node dist/typescript/20250621_arrayAverage.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
