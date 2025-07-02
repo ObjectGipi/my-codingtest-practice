@@ -33,3 +33,4 @@ other: [site] name(lv)
 | 20250616 | [짝수는 싫어요↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120813) | Lv0 | Programmers | TypeScript |
 | 20250617 | [복습] | Lv0 | Programmers | TypeScript |
 | 20250618 | [피자 나눠 먹기 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120814) | Lv0 | Programmers | TypeScript |
+| 20250619 | [피자 나눠 먹기 (2)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120815) | Lv0 | Programmers | TypeScript |
