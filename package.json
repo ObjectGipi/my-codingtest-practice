@@ -11,6 +11,7 @@
     "20250616": "tsc && node dist/typescript/20250616_iDontLikeEvenNumber.js",
     "20250617": "tsc && node dist/typescript/20250617_practice.js",
     "20250618": "tsc && node dist/typescript/20250618_calPizzaPeople1.js",
+    "20250619": "tsc && node dist/typescript/20250619_calPizzaPeople2.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
