@@ -37,3 +37,4 @@ other: [site] name(lv)
 | 20250620 | [피자 나눠 먹기 (3)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120816) | Lv0 | Programmers | TypeScript |
 | 20250621 | [배열의 평균값↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120817) | Lv0 | Programmers | TypeScript |
 | 20250622 | [옷가게 할인 받기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120818) | Lv0 | Programmers | TypeScript |
+| 20250623 | [아이스 아메리카노↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120819) | Lv0 | Programmers | TypeScript |
