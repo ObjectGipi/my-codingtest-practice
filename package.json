@@ -15,6 +15,7 @@
     "20250620": "tsc && node dist/typescript/20250620_calPizzaPeople3.js",
     "20250621": "tsc && node dist/typescript/20250621_arrayAverage.js",
     "20250622": "tsc && node dist/typescript/20250622_calPrice.js",
+    "20250623": "tsc && node dist/typescript/20250623_calIceCoffee.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
