@@ -46,7 +46,7 @@ console.log(calPizzaPeople1UseCeil(8)); // 2
 console.log(calPizzaPeople1UseCeil(14)); // 2
 console.log(calPizzaPeople1UseCeil(50)); // 8
 
-// 올림 & 내림 문법
+// 소수점 올림 & 내림 문법
 // 💡Math.floor: 내림 (작은 정수 방향)
 // 양수 -> 소수점 아래 버리고 0에 가까워짐 (예: 4.7 → 4)
 // 음수 -> 소수점 아래 버리고 0에서 멀어짐 (예: -4.7 → -5)
