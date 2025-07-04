@@ -42,3 +42,4 @@ other: [site] name(lv)
 | 20250625 | [배열 뒤집기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120821) | Lv0 | Programmers | TypeScript |
 | 20250626 | [문자열 뒤집기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/181905) | Lv0 | Programmers | TypeScript |
 | 20250627 | [복습] | Lv0 | Programmers | TypeScript |
+| 20250628 | [직각삼각형 출력하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120823) | Lv0 | Programmers | TypeScript |
