@@ -23,7 +23,7 @@ const calNumberOddEven = (numList: number[]): number[] => {
       cntOdd = cntOdd + 1;
     }
   }
-  console.log(`짝수 개수: ${cntEven}, 홀수 개수: ${cntOdd}`)
+  console.log(`짝수 개수: ${cntEven}, 홀수 개수: ${cntOdd}`);
   return [cntEven, cntOdd];
 };
 

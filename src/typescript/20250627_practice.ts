@@ -25,11 +25,11 @@ console.log(`========================`);
 // 중앙값 구하기
 const practice2 = (numbers: number[]): number => {
   let sortedArray: number[] = [];
-  
+
   // 주어진 배열의 원소 갯수만큼 반복
   for (let i: number = 0; i < numbers.length; i = i + 1) {
     let minNumber: number = 1000;
-    
+
     // 주어진 배열의 원소 중에서 가장 작은 값를 찾고 빈 배열에 차례로 담음
     for (let j: number = 0; j < numbers.length; j = j + 1) {
       if (numbers[j] < minNumber) {
@@ -37,7 +37,7 @@ const practice2 = (numbers: number[]): number => {
       }
     }
     sortedArray.push(minNumber);
-    
+
     // 기존 배열의 값을 범위 밖의 값으로 바꾸고 break;
     for (let k: number = 0; k < numbers.length; k = k + 1) {
       if (numbers[k] === minNumber) {
@@ -58,10 +58,12 @@ console.log(practice2([1, 2, -1, 4, -5, 2, -10]));
 console.log(`========================`);
 
 const practice2V2 = (numbers: number[]): number => {
-  const sortedArray: number[] = numbers.slice().sort((a: number, b: number): number => a - b);
+  const sortedArray: number[] = numbers
+    .slice()
+    .sort((a: number, b: number): number => a - b);
   const centralNumber: number = Math.trunc(sortedArray.length / 2);
   return sortedArray[centralNumber];
-}
+};
 
 console.log(practice2V2([1, 2, -1, 4, -5, 2, -10]));
 console.log(`========================`);
@@ -70,10 +72,10 @@ console.log(`========================`);
 // 0 < array의 길이 < 100
 // 0 ≤ array의 원소 < 1000
 const practice3 = (array: number[]): number[] => {
-  let modeNumber: number = -1;                // 최빈값
-  let modeNumberCnt: number = 0;              // 최빈값이 반복된 횟수
-  let beforeNumber: number = -1;              // 이전값
-  let numberCnt: number = 0;                  // 현재 값이 반복된 횟수
+  let modeNumber: number = -1; // 최빈값
+  let modeNumberCnt: number = 0; // 최빈값이 반복된 횟수
+  let beforeNumber: number = -1; // 이전값
+  let numberCnt: number = 0; // 현재 값이 반복된 횟수
   let isDuplicateModeNumber: boolean = false; // 최빈값이 겹치는지 아닌지 확인
 
   // 주어진 배열을 오름차순으로 정렬
@@ -105,8 +107,8 @@ const practice3 = (array: number[]): number[] => {
 
   console.log(sortedArray);
   if (isDuplicateModeNumber) {
-    return [-1 ,0]
-  } 
+    return [-1, 0];
+  }
   return [modeNumber, modeNumberCnt];
 };
 
@@ -127,13 +129,13 @@ const practice4 = (myString: string, s: number, e: number): string => {
   for (let i: number = e + 1; i < myString.length; i = i + 1) {
     arrayFromE = arrayFromE + myString[i];
   }
-  
+
   // 인덱스[s]부터 인덱스[e]까지 담은 배열
   let arrayBetweenSE: string = ``;
   for (let i: number = s; i <= e; i = i + 1) {
     arrayBetweenSE = arrayBetweenSE + myString[i];
   }
-  
+
   // 배열 뒤집기
   let arrayBetweenSEReverse: string = ``;
   for (let i: number = arrayBetweenSE.length - 1; i >= 0; i = i - 1) {
@@ -148,11 +150,17 @@ console.log(`========================`);
 
 const practice4V2 = (myString: string, s: number, e: number): string => {
   const arrayBeforeS: string = myString.split(``).slice(0, s).join(``);
-  const arrayFromE: string = myString.split(``).slice(e + 1, myString.length).join(``);
-  const arrayBetweenSEReverse: string = myString.split(``).slice(s, e + 1).reverse().join(``);
+  const arrayFromE: string = myString
+    .split(``)
+    .slice(e + 1, myString.length)
+    .join(``);
+  const arrayBetweenSEReverse: string = myString
+    .split(``)
+    .slice(s, e + 1)
+    .reverse()
+    .join(``);
   return arrayBeforeS + arrayBetweenSEReverse + arrayFromE;
-
-}
+};
 
 console.log(practice4V2(`Progra21Sremm3`, 6, 12));
 console.log(practice4(`Stanley1yelnatS`, 4, 10));

@@ -15,13 +15,13 @@
  */
 const rightTriangle = (n: number): void => {
   for (let i: number = 1; i <= n; i = i + 1) {
-    let stars: string = ``
+    let stars: string = ``;
     for (let j: number = 1; j <= i; j = j + 1) {
       stars = stars + `*`;
     }
-    console.log(stars)
+    console.log(stars);
   }
-}
+};
 
 // 함수 자체가 console.log를 찍기 때문에 호출만 하면됨
 // console.log(rightTriangle(3)); -> 반환값이 void이기 때문에, undefined 출력됨
