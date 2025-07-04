@@ -18,6 +18,8 @@
     "20250623": "tsc && node dist/typescript/20250623_calIceCoffee.js",
     "20250624": "tsc && node dist/typescript/20250624_calAge.js",
     "20250625": "tsc && node dist/typescript/20250625_reverseArray.js",
+    "20250626": "tsc && node dist/typescript/20250626_reverseString.js",
+    "20250627": "tsc && node dist/typescript/20250627_practice.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
