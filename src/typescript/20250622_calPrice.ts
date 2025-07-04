@@ -18,11 +18,11 @@
  */
 const calPrice = (price: number): number => {
   if (500000 <= price) {
-    price = Math.floor(price * 0.8)
+    price = Math.floor(price * 0.8);
   } else if (300000 <= price) {
-    price = Math.floor(price * 0.9)
+    price = Math.floor(price * 0.9);
   } else if (100000 <= price) {
-    price = Math.floor(price * 0.95)
+    price = Math.floor(price * 0.95);
   }
   return price;
 };
@@ -39,7 +39,7 @@ const calPriceUseSwitch = (price: number): number => {
     case price >= 100_000:
       return Math.floor(price * 0.95);
     default:
-      console.log(`지불 금액이 10만원 이하입니다.`)
+      console.log(`지불 금액이 10만원 이하입니다.`);
       return price;
   }
 };

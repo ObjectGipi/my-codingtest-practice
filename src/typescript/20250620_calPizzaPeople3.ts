@@ -20,6 +20,6 @@
 const calPizzaPeople3 = (slice: number, n: number): number => {
   // n / slice 몫 올림
   return Math.ceil(n / slice);
-}
+};
 
-console.log(calPizzaPeople3(2, 20))
+console.log(calPizzaPeople3(2, 20));

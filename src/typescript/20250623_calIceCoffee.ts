@@ -14,13 +14,12 @@
  * 2) money = 15,000 → [2, 4,000]
  */
 const calIceCoffee = (money: number): number[] => {
-
   // money를 5500으로 나눈 몫 = 마실 수 있는 커피 수
   // money를 5500으로 나눈 나머지 = 남는 돈
   const iceCoffeeCups: number = Math.floor(money / 5500);
   const change: number = money % 5500;
 
   return [iceCoffeeCups, change];
-}
+};
 
 console.log(calIceCoffee(11500));

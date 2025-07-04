@@ -16,8 +16,8 @@
  */
 const calAge = (year: number, age: number): number => {
   // (올해 - 나이) + 1 = 출생 연도
-  return (year - age) + 1
-}
+  return year - age + 1;
+};
 
-console.log(calAge(2022, 40)) // 1983
-console.log(calAge(2022, 23)) // 2000
+console.log(calAge(2022, 40)); // 1983
+console.log(calAge(2022, 23)); // 2000

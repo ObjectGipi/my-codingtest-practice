@@ -28,7 +28,7 @@ const calPizzaPeople2 = (n: number): number => {
   return result;
 };
 
-console.log(calPizzaPeople2(5)) // 5
-console.log(calPizzaPeople2(6)) // 1
-console.log(calPizzaPeople2(12)) // 2
-console.log(calPizzaPeople2(13)) // 13
+console.log(calPizzaPeople2(5)); // 5
+console.log(calPizzaPeople2(6)); // 1
+console.log(calPizzaPeople2(12)); // 2
+console.log(calPizzaPeople2(13)); // 13

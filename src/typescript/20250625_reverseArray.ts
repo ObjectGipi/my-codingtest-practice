@@ -15,15 +15,14 @@
  * | [1, 0, 1, 1, 1, 3, 5] | [5, 3, 1, 1, 1, 0, 1] |
  */
 const reverseArray = (numList: number[]): number[] => {
-
   // 새로운 배열에 주어진 배열의 끝 원소부터 차례대로 넣기
   // 주어진 배열의 length부터 -1 하면서 원소를 끝에서부터 확인
-  let result: number[] = []
+  let result: number[] = [];
   for (let i: number = numList.length - 1; i >= 0; i = i - 1) {
     result.push(numList[i]);
   }
   return result;
-}
+};
 
 console.log(reverseArray([1, 2, 3, 4, 5])); // [5, 4, 3, 2, 1]
 console.log(`========================`);
@@ -31,7 +30,7 @@ console.log(`========================`);
 const reverseArraysV2 = (numList: number[]): number[] => {
   // 원본 배열을 건드리지 않기 위해 slice로 복사한 후, 뒤집기 위해 reverse 사용
   return numList.slice().reverse();
-}
+};
 
 console.log(reverseArraysV2([1, 2, 3, 4, 5])); // [5, 4, 3, 2, 1]
 

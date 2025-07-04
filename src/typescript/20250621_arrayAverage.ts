@@ -24,6 +24,6 @@ const arrayAverage = (numbers: number[]): number => {
     sum = sum + numbers[i];
   }
   return sum / numbers.length;
-}
+};
 
 console.log(arrayAverage([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // 5.5
