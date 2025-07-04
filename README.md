@@ -46,3 +46,4 @@ other: [site] name(lv)
 | 20250629 | [짝수 홀수 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120824) | Lv0 | Programmers | TypeScript |
 | 20250630 | [문자열 반복해서 출력하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/181950) | Lv0 | Programmers | TypeScript |
 | 20250701 | [문자 반복해서 출력하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120825) | Lv0 | Programmers | TypeScript |
+| 20250702 | [특정 문자 제거하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120826) | Lv0 | Programmers | TypeScript |
