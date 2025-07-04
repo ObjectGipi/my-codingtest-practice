@@ -24,6 +24,7 @@
     "20250629": "tsc && node dist/typescript/20250629_calNumberOddEven.js",
     "20250630": "tsc && node dist/typescript/20250630_repeatString.js",
     "20250701": "tsc && node dist/typescript/20250701_repeatChar.js",
+    "20250702": "tsc && node dist/typescript/20250702_deleteChar.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
