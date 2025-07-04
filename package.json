@@ -21,6 +21,7 @@
     "20250626": "tsc && node dist/typescript/20250626_reverseString.js",
     "20250627": "tsc && node dist/typescript/20250627_practice.js",
     "20250628": "tsc && node dist/typescript/20250628_rightTriangle.js",
+    "20250629": "tsc && node dist/typescript/20250629_calNumberOddEven.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
