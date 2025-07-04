@@ -41,3 +41,4 @@ other: [site] name(lv)
 | 20250624 | [나이 출력↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120820) | Lv0 | Programmers | TypeScript |
 | 20250625 | [배열 뒤집기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120821) | Lv0 | Programmers | TypeScript |
 | 20250626 | [문자열 뒤집기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/181905) | Lv0 | Programmers | TypeScript |
+| 20250627 | [복습] | Lv0 | Programmers | TypeScript |
