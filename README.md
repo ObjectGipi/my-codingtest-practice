@@ -47,3 +47,4 @@ other: [site] name(lv)
 | 20250630 | [문자열 반복해서 출력하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/181950) | Lv0 | Programmers | TypeScript |
 | 20250701 | [문자 반복해서 출력하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120825) | Lv0 | Programmers | TypeScript |
 | 20250702 | [특정 문자 제거하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120826) | Lv0 | Programmers | TypeScript |
+| 20250703 | [특정 문자열 제거하기↗️](https://github.com/ObjectGipi/my-codingtest-practice/blob/main/src/typescript/20250703_deleteString.ts) | Lv1 | Custom | TypeScript |
