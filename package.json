@@ -25,6 +25,7 @@
     "20250630": "tsc && node dist/typescript/20250630_repeatString.js",
     "20250701": "tsc && node dist/typescript/20250701_repeatChar.js",
     "20250702": "tsc && node dist/typescript/20250702_deleteChar.js",
+    "20250703": "tsc && node dist/typescript/20250703_deleteString.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,

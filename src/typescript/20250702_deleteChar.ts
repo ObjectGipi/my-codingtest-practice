@@ -31,7 +31,6 @@ console.log(deleteChar(`BCBdbe`, `B`));
 const deleteOnlyFirstChar = (myString: string, letter: string): string => {
   let result: string = "";
   let removed: boolean = false;
-
   for (let i: number = 0; i < myString.length; i = i + 1) {
     if (!removed && myString[i] === letter) {
       removed = true; // 첫 삭제 완료 표시, 이후로는 removed가 true이기 때문에 이 조건이 발동하지 않음
