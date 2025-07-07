@@ -16,7 +16,7 @@
  * | 150,000 | 142,500 |
  * | 580,000 | 464,000 |
  */
-const calPrice = (price: number): number => {
+const calClothesPrice = (price: number): number => {
   if (500000 <= price) {
     price = Math.floor(price * 0.8);
   } else if (300000 <= price) {
@@ -27,7 +27,7 @@ const calPrice = (price: number): number => {
   return price;
 };
 
-console.log(calPrice(580000));
+console.log(calClothesPrice(580000));
 console.log(`========================`);
 
 const calPriceUseSwitch = (price: number): number => {

@@ -27,6 +27,7 @@
     "20250702": "tsc && node dist/typescript/20250702_deleteChar.js",
     "20250703": "tsc && node dist/typescript/20250703_deleteString.js",
     "20250704": "tsc && node dist/typescript/20250704_calAngle.js",
+    "20250705": "tsc && node dist/typescript/20250705_calLambAndDrinkPrice.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
