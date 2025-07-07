@@ -51,3 +51,4 @@ other: [site] name(lv)
 | 20250704 | [각도기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120829) | Lv0 | Programmers | TypeScript |
 | 20250705 | [양꼬치↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120830) | Lv0 | Programmers | TypeScript |
 | 20250706 | [짝수의 합↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120831) | Lv0 | Programmers | TypeScript |
+| 20250707 | [복습] | Lv1 | Programmers | TypeScript |
