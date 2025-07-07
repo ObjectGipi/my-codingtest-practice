@@ -26,6 +26,7 @@
     "20250701": "tsc && node dist/typescript/20250701_repeatChar.js",
     "20250702": "tsc && node dist/typescript/20250702_deleteChar.js",
     "20250703": "tsc && node dist/typescript/20250703_deleteString.js",
+    "20250704": "tsc && node dist/typescript/20250704_calAngle.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
