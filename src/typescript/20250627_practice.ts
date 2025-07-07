@@ -1,5 +1,5 @@
 // 분수의 덧셈
-const practice1 = (
+const fractionAdditionPrac2 = (
   denom1: number,
   numer1: number,
   denom2: number,
@@ -19,11 +19,11 @@ const practice1 = (
   return [denom3 / gcdNumber, numer3 / gcdNumber];
 };
 
-console.log(practice1(2, 1, 4, 7));
+console.log(fractionAdditionPrac2(2, 1, 4, 7));
 console.log(`========================`);
 
 // 중앙값 구하기
-const practice2 = (numbers: number[]): number => {
+const centerElementPrac2 = (numbers: number[]): number => {
   let sortedArray: number[] = [];
 
   // 주어진 배열의 원소 갯수만큼 반복
@@ -54,10 +54,10 @@ const practice2 = (numbers: number[]): number => {
   return sortedArray[centralNumber];
 };
 
-console.log(practice2([1, 2, -1, 4, -5, 2, -10]));
+console.log(centerElementPrac2([1, 2, -1, 4, -5, 2, -10]));
 console.log(`========================`);
 
-const practice2V2 = (numbers: number[]): number => {
+const centerElementPrac2V2 = (numbers: number[]): number => {
   const sortedArray: number[] = numbers
     .slice()
     .sort((a: number, b: number): number => a - b);
@@ -65,13 +65,13 @@ const practice2V2 = (numbers: number[]): number => {
   return sortedArray[centralNumber];
 };
 
-console.log(practice2V2([1, 2, -1, 4, -5, 2, -10]));
+console.log(centerElementPrac2V2([1, 2, -1, 4, -5, 2, -10]));
 console.log(`========================`);
 
 // 최빈값 구하기
 // 0 < array의 길이 < 100
 // 0 ≤ array의 원소 < 1000
-const practice3 = (array: number[]): number[] => {
+const calculateModePrac2 = (array: number[]): number[] => {
   let modeNumber: number = -1; // 최빈값
   let modeNumberCnt: number = 0; // 최빈값이 반복된 횟수
   let beforeNumber: number = -1; // 이전값
@@ -112,12 +112,12 @@ const practice3 = (array: number[]): number[] => {
   return [modeNumber, modeNumberCnt];
 };
 
-console.log(practice3([1, 2, 3, 2, 1, 1, 2, 1, 2, 2]));
-console.log(practice3([3, 100, 5, 5, 100, 101, 2000]));
+console.log(calculateModePrac2([1, 2, 3, 2, 1, 1, 2, 1, 2, 2]));
+console.log(calculateModePrac2([3, 100, 5, 5, 100, 101, 2000]));
 console.log(`========================`);
 
 // 문자열 뒤집기
-const practice4 = (myString: string, s: number, e: number): string => {
+const reverseStringPrac = (myString: string, s: number, e: number): string => {
   // 인덱스[0]부터 인덱스[s] 이전까지 담은 배열
   let arrayBeforeS: string = ``;
   for (let i: number = 0; i < s; i = i + 1) {
@@ -144,11 +144,15 @@ const practice4 = (myString: string, s: number, e: number): string => {
   return arrayBeforeS + arrayBetweenSEReverse + arrayFromE;
 };
 
-console.log(practice4(`Progra21Sremm3`, 6, 12));
-console.log(practice4(`Stanley1yelnatS`, 4, 10));
+console.log(reverseStringPrac(`Progra21Sremm3`, 6, 12));
+console.log(reverseStringPrac(`Stanley1yelnatS`, 4, 10));
 console.log(`========================`);
 
-const practice4V2 = (myString: string, s: number, e: number): string => {
+const reverseStringPracV2 = (
+  myString: string,
+  s: number,
+  e: number,
+): string => {
   const arrayBeforeS: string = myString.split(``).slice(0, s).join(``);
   const arrayFromE: string = myString
     .split(``)
@@ -162,5 +166,5 @@ const practice4V2 = (myString: string, s: number, e: number): string => {
   return arrayBeforeS + arrayBetweenSEReverse + arrayFromE;
 };
 
-console.log(practice4V2(`Progra21Sremm3`, 6, 12));
-console.log(practice4(`Stanley1yelnatS`, 4, 10));
+console.log(reverseStringPracV2(`Progra21Sremm3`, 6, 12));
+console.log(reverseStringPracV2(`Stanley1yelnatS`, 4, 10));
