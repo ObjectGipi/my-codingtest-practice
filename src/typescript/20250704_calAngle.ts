@@ -11,9 +11,6 @@
  * 0 < angle ≤ 180
  * angle은 정수입니다.
  *
- * 입출력 예
- * | angle | result |
- * |-------|--------|
  * | 70    | 1      |
  * | 91    | 3      |
  * | 180   | 4      |
@@ -22,10 +19,10 @@ const calAngle = (angle: number): number => {
   if (0 < angle && angle < 90) {
     return 1;
   }
-  if(angle === 0) {
+  if (angle === 0) {
     return 2;
   }
-  if(90 < angle && angle < 180) {
+  if (90 < angle && angle < 180) {
     return 3;
   }
   return 4;

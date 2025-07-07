@@ -18,7 +18,7 @@ const deleteAllString = (myString: string, letter: string): string => {
   for (let i: number = 0; i < myString.length; i = i + 1) {
     let isMatch: boolean = true;
     for (let j: number = 0; j < letter.length; j = j + 1) {
-      if(myString[i + j] !== letter[j]) {
+      if (myString[i + j] !== letter[j]) {
         isMatch = false;
         break;
       }
@@ -30,10 +30,10 @@ const deleteAllString = (myString: string, letter: string): string => {
     result = result + myString[i];
   }
   return result;
-}
+};
 
-console.log(deleteAllString(`bbbnbbbnanabbb`, `na`));   // bbbnbbb
-console.log(deleteAllString("abcfdefghf", "f"));   // abcdegh
+console.log(deleteAllString(`bbbnbbbnanabbb`, `na`)); // bbbnbbb
+console.log(deleteAllString("abcfdefghf", "f")); // abcdegh
 console.log(`========================`);
 
 /**
@@ -55,15 +55,15 @@ const deleteFirstString = (myString: string, letter: string): string => {
   let isRemoved: boolean = false;
 
   for (let i: number = 0; i < myString.length; i = i + 1) {
-    if(!isRemoved) {
+    if (!isRemoved) {
       let isMatch: boolean = true;
-      for(let j: number = 0; j < letter.length; j = j + 1) {
-        if(myString[i + j] !== letter[j]) {
+      for (let j: number = 0; j < letter.length; j = j + 1) {
+        if (myString[i + j] !== letter[j]) {
           isMatch = false;
           break; // 첫 문자열이 맞지않으면 더 볼 필요도 없기 때문
         }
       }
-      if(isMatch) {
+      if (isMatch) {
         i = i + letter.length - 1; // 위 for문에서 i가 1더해지기 때문에 "- 1"
         isRemoved = true; // 이 조건의 유무에 따라 첫번째 나오는 letter만 지울지, 모든 letter를 지울지가 결정됨
         continue;
@@ -72,10 +72,10 @@ const deleteFirstString = (myString: string, letter: string): string => {
     result = result + myString[i];
   }
   return result;
-}
+};
 
 console.log(deleteFirstString(`bbbnbbbnanabbb`, `na`)); // bbbnbbbnabbb
-console.log(deleteFirstString("abcfdefghf", "f"));      // abcdefghf
+console.log(deleteFirstString("abcfdefghf", "f")); // abcdefghf
 
 // 배열·문자열 문법 indexOf
 // 💡indexOf(searchValue, fromIndex?): 주어진 값이나 부분 문자열이 처음 등장하는 위치의 인덱스를 반환(없으면 –1)

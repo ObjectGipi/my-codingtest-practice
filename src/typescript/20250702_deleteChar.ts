@@ -34,7 +34,7 @@ const deleteOnlyFirstChar = (myString: string, letter: string): string => {
   for (let i: number = 0; i < myString.length; i = i + 1) {
     if (!removed && myString[i] === letter) {
       removed = true; // 첫 삭제 완료 표시, 이후로는 removed가 true이기 때문에 이 조건이 발동하지 않음
-      continue;       // 현재의 myString[i]를 result에 추가하는 코드는 건너뛰고, 바로 다음 반복 진행
+      continue; // 현재의 myString[i]를 result에 추가하는 코드는 건너뛰고, 바로 다음 반복 진행
     }
     result = result + myString[i];
   }
@@ -42,4 +42,4 @@ const deleteOnlyFirstChar = (myString: string, letter: string): string => {
 };
 
 console.log(deleteOnlyFirstChar("abcfdef", "f")); // "abcde"
-console.log(deleteOnlyFirstChar("BCBdbe", "B"));  // "CBdbe"
+console.log(deleteOnlyFirstChar("BCBdbe", "B")); // "CBdbe"
