@@ -30,6 +30,7 @@
     "20250705": "tsc && node dist/typescript/20250705_calLambAndDrinkPrice.js",
     "20250706": "tsc && node dist/typescript/20250706_sumEvenNumber.js",
     "20250707": "tsc && node dist/typescript/20250707_practice.js",
+    "20250708": "tsc && node dist/typescript/20250708_calMinNumber.js",
     "pretty": "prettier --write \"src/**/*\""
   },
   "private": true,
