@@ -80,33 +80,33 @@ console.log(deleteFirstString("abcfdefghf", "f")); // abcdefghf
 // 배열·문자열 문법 indexOf
 // 💡indexOf(searchValue, fromIndex?): 주어진 값이나 부분 문자열이 처음 등장하는 위치의 인덱스를 반환(없으면 –1)
 // – 배열 사용
-//   예: [2, 5, 9, 2].indexOf(5)        → 1
-//   예: [2, 5, 9, 2].indexOf(2, 2)     → 3
+//   예: [2, 5, 9, 2].indexOf(5)        -> 1
+//   예: [2, 5, 9, 2].indexOf(2, 2)     -> 3
 // – 문자열 사용
-//   예: "hello".indexOf("l")           → 2
-//   예: "hello".indexOf("l", 3)        → 3
+//   예: "hello".indexOf("l")           -> 2
+//   예: "hello".indexOf("l", 3)        -> 3
 
 // 배열·문자열 문법 lastIndexOf()
 // 💡lastIndexOf(searchValue, fromIndex?): 뒤에서부터 값이 마지막으로 등장하는 위치의 인덱스를 반환(없으면 –1)
 // – 배열 사용
-//   예: [1, 2, 3, 2, 1].lastIndexOf(2) → 3
-//   예: [1, 2, 3, 2, 1].lastIndexOf(2, 2) → 1
+//   예: [1, 2, 3, 2, 1].lastIndexOf(2) -> 3
+//   예: [1, 2, 3, 2, 1].lastIndexOf(2, 2) -> 1
 // – 문자열 사용
-//   예: "banana".lastIndexOf("na")     → 4
-//   예: "hello".lastIndexOf("l", 2)    → 2
+//   예: "banana".lastIndexOf("na")     -> 4
+//   예: "hello".lastIndexOf("l", 2)    -> 2
 
 // 문자열 문법 substr()
 // 💡 substr(start, length?): start 위치부터 length만큼(생략 시 끝까지) 잘라낸 부분 문자열을 반환
 //   (원본 불변, 표준에선 slice/substring 권장)
 // – start ≥ 0: 앞에서부터 인덱스, start < 0: 뒤에서부터(length + start)
 // – length ≤ 0: 빈 문자열 반환
-//   예: "JavaScript".substr(4)         → "Script"
-//   예: "JavaScript".substr(4, 3)      → "Scr"
-//   예: "JavaScript".substr(-6, 2)     → "Sc"
+//   예: "JavaScript".substr(4)         -> "Script"
+//   예: "JavaScript".substr(4, 3)      -> "Scr"
+//   예: "JavaScript".substr(-6, 2)     -> "Sc"
 
 // 문자열 문법 startsWith()
 // 💡startsWith(searchString, position?): 문자열이 searchString으로 시작하면 true, 아니면 false
 // – position ≥ 0: 해당 인덱스부터 비교 시작 (생략 시 0)
-//   예: "TypeScript".startsWith("Type")    → true
-//   예: "TypeScript".startsWith("Script")  → false
-//   예: "TypeScript".startsWith("Script", 4) → true
+//   예: "TypeScript".startsWith("Type")    -> true
+//   예: "TypeScript".startsWith("Script")  -> false
+//   예: "TypeScript".startsWith("Script", 4) -> true
