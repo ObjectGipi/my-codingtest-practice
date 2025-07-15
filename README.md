@@ -54,3 +54,4 @@ other: git commit -m "date"
 | 20250707 | [복습] | Lv1 | Programmers | TypeScript |
 | 20250708 | [최솟값 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/12941) | Lv2 | Programmers | TypeScript |
 | 20250709 | [배열 자르기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120833) | Lv0 | Programmers | TypeScript |
+| 20250710 | [외계행성의 나이↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120834) | Lv0 | Programmers | TypeScript |
