@@ -20,7 +20,7 @@
  * 2) A = [1, 2], B = [3, 4] → 10
  */
 // a는 오름차순, b는 내림차순으로 정렬하고, 각각의 동일된 인덱스롤 곱한 값을 resultArray에 담음
-  //resultArray의 원소들의 합을 반환
+// resultArray의 원소들의 합을 반환
 const calMinNumber = (a: number[], b: number[]): number => {
   let resultArray: number[] = [];
   let sumResultArray: number = 0;
