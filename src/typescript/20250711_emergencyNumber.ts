@@ -39,7 +39,6 @@ console.log(emergencyNumber([30, 10, 23, 6, 100]));
 console.log(`========================`);
 
 const sortedEmergencyWithIdx = (emergency: number[]): number[] => {
-
   // 기존 배열의 원소들에 value, idx를 추가한 배열 생성
   // 객체를 담은 배열이기 때문에, number[]이 아닌 "타입 추론"에 맡김
   let arrayWithIdx = [];
