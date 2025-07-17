@@ -56,3 +56,4 @@ other: git commit -m "date"
 | 20250709 | [배열 자르기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120833) | Lv0 | Programmers | TypeScript |
 | 20250710 | [외계행성의 나이↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120834) | Lv0 | Programmers | TypeScript |
 | 20250711 | [진료 순서 정하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120835) | Lv0 | Programmers | TypeScript |
+| 20250712 | [순서쌍의 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120836) | Lv0 | Programmers | TypeScript |
