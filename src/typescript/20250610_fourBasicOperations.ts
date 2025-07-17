@@ -1,7 +1,7 @@
 // 유저에게 입력받는 값(input)을 그대로 함수로 해주는 프로그램 형식으로 변환?
 
 export class Calculator {
-  // ❓아래 콘솔로그출력에서 num1, num2를 사용하고 싶어서 public으로 선언했는데 권장되지 않는 방법일까요?
+  // ❓아래 콘솔 로그 출력에서 num1, num2를 사용하고 싶어서 public으로 선언했는데 권장되지 않는 방법일까요?
   // ❓혹은 더 좋은 방법이 있을까요?
   public num1: number;
   public num2: number;
