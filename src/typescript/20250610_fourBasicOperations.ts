@@ -1,4 +1,4 @@
-// 유저에게 입력받는 값(input)을 그대로 함수로 해주는 프로그램 형식으로 변환?
+// 유저에게 입력받는 값(input)을 그대로 함수로 해주는 프로그램 형식으로 변환? -> web-study처럼
 
 export class Calculator {
 
