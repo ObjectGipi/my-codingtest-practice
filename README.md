@@ -58,3 +58,4 @@ other: git commit -m "date"
 | 20250711 | [진료 순서 정하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120835) | Lv0 | Programmers | TypeScript |
 | 20250712 | [순서쌍의 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120836) | Lv0 | Programmers | TypeScript |
 | 20250713 | [개미 군단↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120837) | Lv0 | Programmers | TypeScript |
+| 20250714 | [모스부호 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120838) | Lv0 | Programmers | TypeScript |
