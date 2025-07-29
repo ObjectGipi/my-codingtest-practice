@@ -6,7 +6,7 @@
  * 0 ≤ array의 원소 < 1000
  **/
 
-const calculateMode = (array: number[]): number[] => {
+const calculateModeNumber = (array: number[]): number[] => {
   let sortedArray: number[] = [];
   let cntArray: number = 0;
 
@@ -88,4 +88,4 @@ const calculateMode = (array: number[]): number[] => {
   return [modeNumber, modeNumberCnt];
 };
 
-console.log(calculateMode([3, 1, 1, 1, 3, 1, 3, 3, 3, 3]));
+console.log(calculateModeNumber([3, 1, 1, 1, 3, 1, 3, 3, 3, 3]));

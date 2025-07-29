@@ -2,16 +2,21 @@
 // 대신 split은 separator를 기준으로 배열 1개 만들어서 반환
 // 관련된 코테 문제 몇개 풀어보기
 const printWithSplit = (): void => {
-    const allUsers: string[] = ["aaaa@aaaa, aaaa, aa", "bbbb@bbbb, bbbb, bb", "cccc@cccc, cccc, cc", "dddd@dddd, dddd, dd"]
-    const allUsers1 = allUsers[0].split(`, `);
-    const allUsers2 = allUsers[0].split(`\n`); // 이게 잘 이해가 안됨
-    const allUsers3 = allUsers[0].split(` `);
-    const allUsers4 = allUsers[0].split(`a`); // 이게 잘 이해가 안됨
-    console.log(allUsers1);
-    console.log(allUsers2);
-    console.log(allUsers3);
-    console.log(allUsers4);
-  }
+  const allUsers: string[] = [
+    "aaaa@aaaa, aaaa, aa",
+    "bbbb@bbbb, bbbb, bb",
+    "cccc@cccc, cccc, cc",
+    "dddd@dddd, dddd, dd",
+  ];
+  const allUsers1 = allUsers[0].split(`, `);
+  const allUsers2 = allUsers[0].split(`\n`); // 이게 잘 이해가 안됨
+  const allUsers3 = allUsers[0].split(` `);
+  const allUsers4 = allUsers[0].split(`a`); // 이게 잘 이해가 안됨
+  console.log(allUsers1);
+  console.log(allUsers2);
+  console.log(allUsers3);
+  console.log(allUsers4);
+};
 
 printWithSplit();
 console.log(`========================`);
@@ -36,26 +41,30 @@ console.log(`========================`);
  */
 
 class UserEntityWithoutAge {
-    public email: string;
-    public name: string;
+  public email: string;
+  public name: string;
 
-    constructor(email: string, name: string) {
-        this.email = email;
-        this.name = name;
-    }
+  constructor(email: string, name: string) {
+    this.email = email;
+    this.name = name;
+  }
 }
 
 const userInfoOnlyEmailName = (userInfo: string[]) => {
-    let result = [];
-    for (let i: number = 0; i < userInfo.length; i = i + 1) {
-        const [email, name, age] = userInfo[i].split(`, `);
-        const userEntityWithoutAge = new UserEntityWithoutAge(email, name);
-        result.push(userEntityWithoutAge);
-    }
-    return result;
+  let result = [];
+  for (let i: number = 0; i < userInfo.length; i = i + 1) {
+    const [email, name, age] = userInfo[i].split(`, `);
+    const userEntityWithoutAge = new UserEntityWithoutAge(email, name);
+    result.push(userEntityWithoutAge);
+  }
+  return result;
 };
 
-const userInfo: string[] = ["aaa@naver.com, 철수, 15", "bbb@gmail.com, 영희, 10", "ccc@gmail.com, 재희, 18"];
+const userInfo: string[] = [
+  "aaa@naver.com, 철수, 15",
+  "bbb@gmail.com, 영희, 10",
+  "ccc@gmail.com, 재희, 18",
+];
 console.log(userInfoOnlyEmailName(userInfo));
 console.log(`========================`);
 
@@ -78,17 +87,17 @@ console.log(`========================`);
  */
 
 const wordLengthCounter = (word: string): number[] => {
-    // 띄워쓰기 기준으로 나누기
-    const splitWithSpace = word.split(` `);
-    console.log(splitWithSpace);
+  // 띄워쓰기 기준으로 나누기
+  const splitWithSpace = word.split(` `);
+  console.log(splitWithSpace);
 
-    // 각 원소 length를 result 배열에 담기
-    let result: number[] = [];
-    for (let i: number = 0; i < splitWithSpace.length; i = i + 1) {
-        result.push(splitWithSpace[i].length);
-    }
-    return result;
-}
+  // 각 원소 length를 result 배열에 담기
+  let result: number[] = [];
+  for (let i: number = 0; i < splitWithSpace.length; i = i + 1) {
+    result.push(splitWithSpace[i].length);
+  }
+  return result;
+};
 
 const word: string = `I am learning TypeScript`;
 console.log(wordLengthCounter(word));
