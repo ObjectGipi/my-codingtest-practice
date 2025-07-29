@@ -1,5 +1,3 @@
-// 유저에게 입력받는 값(input)을 그대로 함수로 해주는 프로그램 형식으로 변환? -> web-study처럼
-
 export class Calculator {
   // 두 수의 합
   public addition = (num1: number, num2: number): number => {
