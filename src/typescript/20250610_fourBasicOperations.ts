@@ -1,7 +1,6 @@
 // 유저에게 입력받는 값(input)을 그대로 함수로 해주는 프로그램 형식으로 변환? -> web-study처럼
 
 export class Calculator {
-
   // 두 수의 합
   public addition = (num1: number, num2: number): number => {
     return num1 + num2;
@@ -29,10 +28,9 @@ const calculator = new Calculator();
 console.log(`
 두 수의 합: ${calculator.addition(10, 5)}
 두 수의 차: ${calculator.subtraction(10, 5)}
-두 수의 곱: ${calculator.multiplication(10 ,5)}
-두 수의 몫과 나머지: ${calculator.divisionAndRemainder(10 ,5)}
-`
-);
+두 수의 곱: ${calculator.multiplication(10, 5)}
+두 수의 몫과 나머지: ${calculator.divisionAndRemainder(10, 5)}
+`);
 
 // // 💡파라미터 -> int & 리턴값 -> string 해야한다면? ➡️ parseInt(), toString()
 // const additionV2 = (num1: string, num2: string): string => {

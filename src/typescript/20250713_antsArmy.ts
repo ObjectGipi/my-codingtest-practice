@@ -21,17 +21,17 @@
  */
 const antsArmy = (hp: number): string[] => {
   let result: string[] = [];
-  let antsName: string[] = [`장군개미`, `병정개미`, `일개미`]
+  let antsName: string[] = [`장군개미`, `병정개미`, `일개미`];
   let antsArray: number[] = [5, 3, 1];
   for (let i: number = 0; i < antsArray.length; i = i + 1) {
     if (hp >= antsArray[i]) {
       const cnt: number = Math.trunc(hp / antsArray[i]);
-      hp = hp - (Math.trunc(hp / antsArray[i]) * antsArray[i]);
+      hp = hp - Math.trunc(hp / antsArray[i]) * antsArray[i];
       result.push(`필요한 ${antsName[i]}의 수는 ${cnt}마리 입니다.`);
     }
   }
   return result;
-}
+};
 
 console.log(antsArmy(23));
 console.log(antsArmy(24));

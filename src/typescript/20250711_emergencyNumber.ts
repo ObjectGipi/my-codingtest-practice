@@ -16,7 +16,6 @@
  * | [30, 10, 23, 6, 100]    | [2, 4, 3, 5, 1]  |
  */
 const emergencyNumber = (emergency: number[]): number[] => {
-
   // rank 변수 1 선언
   // 비교하는 원소(i번째)가 나머지 원소들(j번째)보다 작을 때마다 rank + 1
   // 마지막에 result에 rank를 담음
@@ -24,14 +23,14 @@ const emergencyNumber = (emergency: number[]): number[] => {
   for (let i: number = 0; i < emergency.length; i = i + 1) {
     let rank: number = 1;
     for (let j: number = 0; j < emergency.length; j = j + 1) {
-      if(emergency[i] < emergency[j]) {
+      if (emergency[i] < emergency[j]) {
         rank = rank + 1;
       }
     }
     result.push(rank);
   }
   return result;
-}
+};
 
 console.log(emergencyNumber([3, 76, 24]));
 console.log(emergencyNumber([1, 2, 3, 4, 5, 6, 7]));
@@ -43,7 +42,7 @@ const sortedEmergencyWithIdx = (emergency: number[]): number[] => {
   // 객체를 담은 배열이기 때문에, number[]이 아닌 "타입 추론"에 맡김
   let arrayWithIdx = [];
   for (let i: number = 0; i < emergency.length; i = i + 1) {
-    arrayWithIdx.push({value: emergency[i], idx: i})
+    arrayWithIdx.push({ value: emergency[i], idx: i });
   }
   console.log(arrayWithIdx);
 
@@ -58,7 +57,7 @@ const sortedEmergencyWithIdx = (emergency: number[]): number[] => {
     result[sortedArrayWithIdx[i].idx] = i + 1;
   }
   return result;
-}
+};
 
 console.log(sortedEmergencyWithIdx([3, 76, 24]));
 console.log(sortedEmergencyWithIdx([1, 2, 3, 4, 5, 6, 7]));

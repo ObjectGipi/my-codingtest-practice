@@ -14,16 +14,16 @@
  */
 const winnerRSP = (rsp: string): string => {
   const rspRecord: Record<string, string> = {
-    '2': '0',
-    '0': '5',
-    '5': '2'
-    }
+    "2": "0",
+    "0": "5",
+    "5": "2",
+  };
   let result: string = ``;
   for (let i: number = 0; i < rsp.length; i = i + 1) {
     result = result + rspRecord[rsp[i]];
   }
   return result;
-}
+};
 
 console.log(winnerRSP(`2`));
 console.log(winnerRSP(`205`));

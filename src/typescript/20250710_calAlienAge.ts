@@ -24,7 +24,7 @@ const calAlienAge = (age: number): string => {
     result = result + char[parseInt(stringAge[i])];
   }
   return result;
-}
+};
 
 console.log(calAlienAge(23));
 console.log(calAlienAge(51));
@@ -40,7 +40,7 @@ const calAlienAgeWithAscii = (age: number): string => {
     result = result + String.fromCharCode(stringAge[i].charCodeAt(0) + 49);
   }
   return result;
-}
+};
 
 console.log(calAlienAgeWithAscii(23));
 console.log(calAlienAgeWithAscii(51));

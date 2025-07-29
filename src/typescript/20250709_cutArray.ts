@@ -14,11 +14,11 @@
  */
 const cutArray = (numbers: number[], num1: number, num2: number): number[] => {
   let result: number[] = [];
-  for (let i: number = num1; i <= num2; i = i + 1 ) {
-   result.push(numbers[i]);
+  for (let i: number = num1; i <= num2; i = i + 1) {
+    result.push(numbers[i]);
   }
   return result;
-}
+};
 
-console.log(cutArray([1, 2, 3, 4, 5], 1, 3)) // [2, 3, 4]
-console.log(cutArray([1, 3, 5], 1, 2)) // [3, 5]
+console.log(cutArray([1, 2, 3, 4, 5], 1, 3)); // [2, 3, 4]
+console.log(cutArray([1, 3, 5], 1, 2)); // [3, 5]

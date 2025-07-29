@@ -23,7 +23,7 @@ const pairOfNumbersCounter = (n: number): string[] => {
   }
   console.log(`순서쌍의 갯수는 ${result.length}개 입니다.`);
   return result;
-}
+};
 
 console.log(pairOfNumbersCounter(20));
 console.log(pairOfNumbersCounter(100));

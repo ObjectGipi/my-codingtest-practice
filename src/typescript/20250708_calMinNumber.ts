@@ -31,13 +31,13 @@ const calMinNumber = (a: number[], b: number[]): number => {
   for (let i: number = 0; i < a.length; i = i + 1) {
     let minNumber: number = 1001;
     for (let j: number = 0; j < a.length; j = j + 1) {
-      if(a[j] < minNumber) {
+      if (a[j] < minNumber) {
         minNumber = a[j];
       }
     }
     sortedA.push(minNumber);
-    for(let j: number = 0; j < a.length; j = j + 1) {
-      if(a[j] === minNumber) {
+    for (let j: number = 0; j < a.length; j = j + 1) {
+      if (a[j] === minNumber) {
         a[j] = 1001;
         break;
       }
@@ -46,7 +46,7 @@ const calMinNumber = (a: number[], b: number[]): number => {
   console.log(sortedA);
 
   // b 내림차순
-  for(let i: number = 0; i < b.length; i = i + 1) {
+  for (let i: number = 0; i < b.length; i = i + 1) {
     let maxNumber: number = 0;
     for (let j: number = 0; j < b.length; j = j + 1) {
       if (b[j] > maxNumber) {
@@ -54,8 +54,8 @@ const calMinNumber = (a: number[], b: number[]): number => {
       }
     }
     sortedB.push(maxNumber);
-    for(let j: number = 0; j < b.length; j = j + 1) {
-      if(b[j] === maxNumber) {
+    for (let j: number = 0; j < b.length; j = j + 1) {
+      if (b[j] === maxNumber) {
         b[j] = 0;
         break;
       }
@@ -64,15 +64,16 @@ const calMinNumber = (a: number[], b: number[]): number => {
   console.log(sortedB);
 
   // sortedA, sortedB를 같은 인덱스끼리 곱해서 resultArray에 담고, 모두 합친 값을 sumResultArray에 담아서 반환
-  for(let i: number = 0; i < sortedA.length; i = i + 1) { // .length는 모든 배열이 다 똑같기 때문에 뭘 쓰든 상관없음
+  for (let i: number = 0; i < sortedA.length; i = i + 1) {
+    // .length는 모든 배열이 다 똑같기 때문에 뭘 쓰든 상관없음
     resultArray.push(sortedA[i] * sortedB[i]);
   }
-  for(let i: number = 0; i < resultArray.length; i = i + 1) {
+  for (let i: number = 0; i < resultArray.length; i = i + 1) {
     sumResultArray = sumResultArray + resultArray[i];
   }
   console.log(resultArray);
   return sumResultArray;
-}
+};
 
 console.log(calMinNumber([4, 1, 2], [4, 4, 5])); // 29
 console.log(calMinNumber([1, 2], [3, 4])); // 10
