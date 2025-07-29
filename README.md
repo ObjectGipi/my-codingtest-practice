@@ -28,10 +28,10 @@ other: git commit -m "date"
 | 20250612 | [배열 두배 만들기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120809) | Lv0 | Programmers | TypeScript |
 | 20250613 | [나머지 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120810) | Lv0 | Programmers | TypeScript |
 | 20250613 | [중앙값 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120811) | Lv0 | Programmers | TypeScript |
-| 20250614 | [복습] | Lv0 | Programmers | TypeScript |
+| 20250614 | 복습 | Lv0 | Programmers | TypeScript |
 | 20250615 | [최빈값 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120812) | Lv0 | Programmers | TypeScript |
 | 20250616 | [짝수는 싫어요↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120813) | Lv0 | Programmers | TypeScript |
-| 20250617 | [복습] | Lv0 | Programmers | TypeScript |
+| 20250617 | 복습 | Lv0 | Programmers | TypeScript |
 | 20250618 | [피자 나눠 먹기 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120814) | Lv0 | Programmers | TypeScript |
 | 20250619 | [피자 나눠 먹기 (2)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120815) | Lv0 | Programmers | TypeScript |
 | 20250620 | [피자 나눠 먹기 (3)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120816) | Lv0 | Programmers | TypeScript |
@@ -41,7 +41,7 @@ other: git commit -m "date"
 | 20250624 | [나이 출력↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120820) | Lv0 | Programmers | TypeScript |
 | 20250625 | [배열 뒤집기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120821) | Lv0 | Programmers | TypeScript |
 | 20250626 | [문자열 뒤집기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/181905) | Lv0 | Programmers | TypeScript |
-| 20250627 | [복습] | Lv0 | Programmers | TypeScript |
+| 20250627 | 복습 | Lv0 | Programmers | TypeScript |
 | 20250628 | [직각삼각형 출력하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120823) | Lv0 | Programmers | TypeScript |
 | 20250629 | [짝수 홀수 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120824) | Lv0 | Programmers | TypeScript |
 | 20250630 | [문자열 반복해서 출력하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/181950) | Lv0 | Programmers | TypeScript |
@@ -51,7 +51,7 @@ other: git commit -m "date"
 | 20250704 | [각도기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120829) | Lv0 | Programmers | TypeScript |
 | 20250705 | [양꼬치↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120830) | Lv0 | Programmers | TypeScript |
 | 20250706 | [짝수의 합↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120831) | Lv0 | Programmers | TypeScript |
-| 20250707 | [복습] | Lv1 | Programmers | TypeScript |
+| 20250707 | 복습 | Lv1 | Programmers | TypeScript |
 | 20250708 | [최솟값 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/12941) | Lv2 | Programmers | TypeScript |
 | 20250709 | [배열 자르기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120833) | Lv0 | Programmers | TypeScript |
 | 20250710 | [외계행성의 나이↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120834) | Lv0 | Programmers | TypeScript |
@@ -59,6 +59,6 @@ other: git commit -m "date"
 | 20250712 | [순서쌍의 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120836) | Lv0 | Programmers | TypeScript |
 | 20250713 | [개미 군단↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120837) | Lv0 | Programmers | TypeScript |
 | 20250714 | [모스부호 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120838) | Lv0 | Programmers | TypeScript |
-| 20250715 | [가위 바위 보)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120839) | Lv0 | Programmers | TypeScript |
-| 20250716 | [복습] | Lv0 | Programmers | TypeScript |
-| 20250717 | [split 연습)]| Lv0 | Lv0 | Custom | TypeScript |
+| 20250715 | [가위 바위 보↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120839) | Lv0 | Programmers | TypeScript |
+| 20250716 | 복습 | Lv0 | Programmers | TypeScript |
+| 20250717 | split 연습 | Lv0 | Lv0 | Custom | TypeScript |
