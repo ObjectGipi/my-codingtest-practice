@@ -92,13 +92,14 @@ const deleteFirstStringPracV2 = (myString: string, letter: string): string => {
     for (let j: number = 0; j < letter.length; j = j + 1) {
       if (myString[i + j] !== letter[j]) {
         isMatch = false;
-        result = result + myString[i];
         break;
       }
     }
     if (isMatch) {
       i = i + letter.length - 1;
+      continue;
     }
+    result = result + myString[i];
   }
   return result;
 };
@@ -124,10 +125,65 @@ console.log(`========================`);
  * | [1, 2, 3, 4, 5, 6, 7]   | [7, 6, 5, 4, 3, 2, 1] |
  * | [30, 10, 23, 6, 100]    | [2, 4, 3, 5, 1]  |
  */
-// 진료 순서 정하기
-// emergencyNumber
+const emergencyNumberPrac = (emergency: number[]): number[] => {
+  let rank: number = 1;
+  let result: number[] = [];
+  for (let i: number = 0; i < emergency.length; i = i + 1) {
+    for (let j: number = 0; j < emergency.length; j = j + 1) {
+      if (emergency[i] < emergency[j]) {
+        rank = rank + 1;
+      }
+    }
+    result.push(rank);
+    rank = 1;
+  }
+  return result;
+}
 
+console.log(emergencyNumberPrac([3, 76, 24]));
+console.log(emergencyNumberPrac([1, 2, 3, 4, 5, 6, 7]));
+console.log(emergencyNumberPrac([30, 10, 23, 6, 100]));
 console.log(`========================`);
+
+const emergencyNumberWithIdxPrac = (emergency: number[]): number[] => {
+  let arrayWithIdx = [];
+  for (let i : number = 0; i < emergency.length; i = i + 1) {
+    arrayWithIdx.push({value: emergency[i], idx: i});
+  }
+  console.log(arrayWithIdx);
+  // 내림차순
+  // arrayWithIdx[i].value 값을 전부 비교해서 제일
+  let sortedArrayWithIdx = [];
+  for (let i: number = 0; i < arrayWithIdx.length; i = i + 1) {
+    let maxNumber: number = 0;
+    for (let j: number = 0; j < arrayWithIdx.length; j = j + 1) {
+      if (maxNumber < arrayWithIdx[j].value) {
+        maxNumber = arrayWithIdx[j].value;
+      }
+    }
+
+    for (let k: number = 0; k < arrayWithIdx.length; k = k + 1) {
+      if (arrayWithIdx[k].value === maxNumber) {
+        sortedArrayWithIdx.push({value: arrayWithIdx[k].value, idx: arrayWithIdx[k].idx});
+        arrayWithIdx[k].value = 0;
+        // JS의 객체 참조 때문에 arrayWithIdx.value = sortedArrayWithIdx.value 현상 발생
+        // = sortedArrayWithIdx.push({...arrayWithIdx[k]});
+      }
+    }
+  }
+  console.log(sortedArrayWithIdx);
+  let result: number[] = new Array(sortedArrayWithIdx.length);
+  for (let i: number = 0; i < sortedArrayWithIdx.length; i = i + 1) {
+    result[sortedArrayWithIdx[i].idx] = i + 1;
+  }
+  return result;
+};
+
+console.log(emergencyNumberWithIdxPrac([3, 76, 24]));
+console.log(emergencyNumberWithIdxPrac([1, 2, 3, 4, 5, 6, 7]));
+console.log(emergencyNumberWithIdxPrac([30, 10, 23, 6, 100]));
+console.log(`========================`);
+
 /**
  * 문제 설명
  * 머쓱이는 친구에게 모스부호를 이용한 편지를 받았습니다.
@@ -157,4 +213,47 @@ console.log(`========================`);
  * ".... . .-.. .-.. ---"        | "hello"
  * ".--. -.-- - .... --- -."     | "python"
  */
-// morseCodeTranslator1
+const morseCodeTranslator1Prac = (letter: string): string => {
+  const morse: Record<string, string> = {
+    '.-':'a', '-...':'b', '-.-.':'c', '-..':'d', '.':'e', '..-.':'f',
+    '--.':'g', '....':'h', '..':'i', '.---':'j', '-.-':'k', '.-..':'l',
+    '--':'m', '-.':'n', '---':'o', '.--.':'p', '--.-':'q', '.-.':'r',
+    '...':'s', '-':'t', '..-':'u', '...-':'v', '.--':'w', '-..-':'x',
+    '-.--':'y', '--..':'z'
+  }
+  let result: string = ``;
+  let letterToMorse: string = ``;
+  for (let i: number = 0; i < letter.length; i = i + 1) {
+    if (letter[i] !== ` `) {
+      letterToMorse = letterToMorse + letter[i];
+    } else {
+      result = result + morse[letterToMorse];
+      letterToMorse = ``;
+    }
+  }
+  result = result + morse[letterToMorse];
+  return result;
+}
+
+console.log(morseCodeTranslator1Prac(".... . .-.. .-.. ---"))
+console.log(morseCodeTranslator1Prac(".--. -.-- - .... --- -."))
+console.log(`========================`);
+
+const morseCodeTranslator1UseSplitPrac = (letter: string): string => {
+  const morse: Record<string, string> = {
+    '.-':'a', '-...':'b', '-.-.':'c', '-..':'d', '.':'e', '..-.':'f',
+    '--.':'g', '....':'h', '..':'i', '.---':'j', '-.-':'k', '.-..':'l',
+    '--':'m', '-.':'n', '---':'o', '.--.':'p', '--.-':'q', '.-.':'r',
+    '...':'s', '-':'t', '..-':'u', '...-':'v', '.--':'w', '-..-':'x',
+    '-.--':'y', '--..':'z'
+  }
+  let result: string = ``;
+  const letterArray: string[] = letter.split(' ');
+  for (let i: number = 0; i < letterArray.length; i = i + 1) {
+    result = result + morse[letterArray[i]];
+  }
+  return result;
+}
+
+console.log(morseCodeTranslator1UseSplitPrac(".... . .-.. .-.. ---"))
+console.log(morseCodeTranslator1UseSplitPrac(".--. -.-- - .... --- -."))
