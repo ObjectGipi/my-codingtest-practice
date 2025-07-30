@@ -6,10 +6,10 @@ const fractionAdditionPracV2 = (
   bunmo1: number,
   bunza1: number,
   bunmo2: number,
-  bunza2: number
+  bunza2: number,
 ): number[] => {
   let bunmo3: number = bunmo1 * bunmo2;
-  let bunza3: number = (bunmo2 * bunza1) + (bunmo1 * bunza2);
+  let bunza3: number = bunmo2 * bunza1 + bunmo1 * bunza2;
   let minNumber: number = 0;
   if (bunmo3 < bunza3) {
     minNumber = bunmo3;
@@ -25,7 +25,7 @@ const fractionAdditionPracV2 = (
   return [bunmo3, bunza3];
 };
 
-console.log(fractionAdditionPracV2(2,1, 3, 4)); // [6, 11]
+console.log(fractionAdditionPracV2(2, 1, 3, 4)); // [6, 11]
 console.log(fractionAdditionPracV2(3, 5, 7, 10)); // [21, 65]
 console.log(fractionAdditionPracV2(2, 1, 2, 1)); // [1, 1]
 console.log(`========================`);
@@ -37,9 +37,41 @@ console.log(`========================`);
  * 0 < array의 길이 < 100
  * 0 ≤ array의 원소 < 1000
  **/
-// calculateModeNumber
+const calculateModeNumberPrac = (array: number[]) => {
+  let modeNumber: number = -1;
+  let modeNumberCnt: number = 0;
+  let arrayNumber: number = -1;
+  let arrayNumberCnt: number = 0;
+  let isDuplicateModeNumber: boolean = false;
+  const sortedArray: number[] = array.slice().sort((a, b) => a - b); // 오름차순
+  for (let i: number = 0; i < sortedArray.length; i = i + 1) {
+    if (sortedArray[i] !== arrayNumber) {
+      arrayNumber = sortedArray[i];
+      arrayNumberCnt = 1;
+    } else {
+      arrayNumberCnt = arrayNumberCnt + 1;
+    }
 
+    if (modeNumber !== arrayNumber && modeNumberCnt === arrayNumberCnt) {
+      isDuplicateModeNumber = true;
+    }
+
+    if (modeNumberCnt < arrayNumberCnt) {
+      modeNumber = arrayNumber;
+      modeNumberCnt = arrayNumberCnt;
+      isDuplicateModeNumber = false;
+    }
+  }
+  if (isDuplicateModeNumber) {
+    return [-1, 0];
+  }
+  return [modeNumber, modeNumberCnt];
+};
+
+console.log(calculateModeNumberPrac([3, 3, 1, 1, 3, 2, 1, 3, 3, 3, 3])); // [3, 7]
+console.log(calculateModeNumberPrac([3, 3, 1, 1, 3, 2, 1, 4])); // [-1, 0]
 console.log(`========================`);
+
 /**
  * 문제 설명
  * 문자열 myString과 연속된 문자열 letter가 매개변수로 주어집니다.
@@ -53,9 +85,28 @@ console.log(`========================`);
  * 입출력 예
  * | "banana"   | "na"   | "ba"    |
  */
-// deleteFirstString
+const deleteFirstStringPracV2 = (myString: string, letter: string): string => {
+  let result: string = ``;
+  for (let i: number = 0; i < myString.length; i = i + 1) {
+    let isMatch: boolean = true;
+    for (let j: number = 0; j < letter.length; j = j + 1) {
+      if (myString[i + j] !== letter[j]) {
+        isMatch = false;
+        result = result + myString[i];
+        break;
+      }
+    }
+    if (isMatch) {
+      i = i + letter.length - 1;
+    }
+  }
+  return result;
+};
 
+console.log(deleteFirstStringPracV2(`banana`, `na`));
+console.log(deleteFirstStringPracV2(`abcdeffcde`, `cde`));
 console.log(`========================`);
+
 /**
  * 진료 순서 정하기
  *
