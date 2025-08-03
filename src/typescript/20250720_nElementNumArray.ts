@@ -48,6 +48,6 @@ const nElementNumArrayUseSlice = (numList: number[], n: number): number[][] => {
   return result;
 };
 
-// slice는 배열 길이를 넘어가면 에러가 뜨지않고, 끝까지 잘라줌
 console.log(nElementNumArrayUseSlice([1, 2, 3, 4, 5, 6, 7, 8, 9], 2));
 console.log(nElementNumArrayUseSlice([100, 95, 2, 4, 5, 6, 18, 33, 948], 3));
+// slice는 배열 길이를 넘어가면 에러가 뜨지않고, 해당 원소 ~ 배열끝까지 잘라서 담아줌
