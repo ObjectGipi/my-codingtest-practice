@@ -138,7 +138,7 @@ const emergencyNumberPrac = (emergency: number[]): number[] => {
     rank = 1;
   }
   return result;
-}
+};
 
 console.log(emergencyNumberPrac([3, 76, 24]));
 console.log(emergencyNumberPrac([1, 2, 3, 4, 5, 6, 7]));
@@ -147,8 +147,8 @@ console.log(`========================`);
 
 const emergencyNumberWithIdxPrac = (emergency: number[]): number[] => {
   let arrayWithIdx = [];
-  for (let i : number = 0; i < emergency.length; i = i + 1) {
-    arrayWithIdx.push({value: emergency[i], idx: i});
+  for (let i: number = 0; i < emergency.length; i = i + 1) {
+    arrayWithIdx.push({ value: emergency[i], idx: i });
   }
   console.log(arrayWithIdx);
   // 내림차순
@@ -164,7 +164,10 @@ const emergencyNumberWithIdxPrac = (emergency: number[]): number[] => {
 
     for (let k: number = 0; k < arrayWithIdx.length; k = k + 1) {
       if (arrayWithIdx[k].value === maxNumber) {
-        sortedArrayWithIdx.push({value: arrayWithIdx[k].value, idx: arrayWithIdx[k].idx});
+        sortedArrayWithIdx.push({
+          value: arrayWithIdx[k].value,
+          idx: arrayWithIdx[k].idx,
+        });
         arrayWithIdx[k].value = 0;
         // JS의 객체 참조 때문에 arrayWithIdx.value = sortedArrayWithIdx.value 현상 발생
         // = sortedArrayWithIdx.push({...arrayWithIdx[k]});
@@ -215,12 +218,33 @@ console.log(`========================`);
  */
 const morseCodeTranslator1Prac = (letter: string): string => {
   const morse: Record<string, string> = {
-    '.-':'a', '-...':'b', '-.-.':'c', '-..':'d', '.':'e', '..-.':'f',
-    '--.':'g', '....':'h', '..':'i', '.---':'j', '-.-':'k', '.-..':'l',
-    '--':'m', '-.':'n', '---':'o', '.--.':'p', '--.-':'q', '.-.':'r',
-    '...':'s', '-':'t', '..-':'u', '...-':'v', '.--':'w', '-..-':'x',
-    '-.--':'y', '--..':'z'
-  }
+    ".-": "a",
+    "-...": "b",
+    "-.-.": "c",
+    "-..": "d",
+    ".": "e",
+    "..-.": "f",
+    "--.": "g",
+    "....": "h",
+    "..": "i",
+    ".---": "j",
+    "-.-": "k",
+    ".-..": "l",
+    "--": "m",
+    "-.": "n",
+    "---": "o",
+    ".--.": "p",
+    "--.-": "q",
+    ".-.": "r",
+    "...": "s",
+    "-": "t",
+    "..-": "u",
+    "...-": "v",
+    ".--": "w",
+    "-..-": "x",
+    "-.--": "y",
+    "--..": "z",
+  };
   let result: string = ``;
   let letterToMorse: string = ``;
   for (let i: number = 0; i < letter.length; i = i + 1) {
@@ -233,27 +257,48 @@ const morseCodeTranslator1Prac = (letter: string): string => {
   }
   result = result + morse[letterToMorse];
   return result;
-}
+};
 
-console.log(morseCodeTranslator1Prac(".... . .-.. .-.. ---"))
-console.log(morseCodeTranslator1Prac(".--. -.-- - .... --- -."))
+console.log(morseCodeTranslator1Prac(".... . .-.. .-.. ---"));
+console.log(morseCodeTranslator1Prac(".--. -.-- - .... --- -."));
 console.log(`========================`);
 
 const morseCodeTranslator1UseSplitPrac = (letter: string): string => {
   const morse: Record<string, string> = {
-    '.-':'a', '-...':'b', '-.-.':'c', '-..':'d', '.':'e', '..-.':'f',
-    '--.':'g', '....':'h', '..':'i', '.---':'j', '-.-':'k', '.-..':'l',
-    '--':'m', '-.':'n', '---':'o', '.--.':'p', '--.-':'q', '.-.':'r',
-    '...':'s', '-':'t', '..-':'u', '...-':'v', '.--':'w', '-..-':'x',
-    '-.--':'y', '--..':'z'
-  }
+    ".-": "a",
+    "-...": "b",
+    "-.-.": "c",
+    "-..": "d",
+    ".": "e",
+    "..-.": "f",
+    "--.": "g",
+    "....": "h",
+    "..": "i",
+    ".---": "j",
+    "-.-": "k",
+    ".-..": "l",
+    "--": "m",
+    "-.": "n",
+    "---": "o",
+    ".--.": "p",
+    "--.-": "q",
+    ".-.": "r",
+    "...": "s",
+    "-": "t",
+    "..-": "u",
+    "...-": "v",
+    ".--": "w",
+    "-..-": "x",
+    "-.--": "y",
+    "--..": "z",
+  };
   let result: string = ``;
-  const letterArray: string[] = letter.split(' ');
+  const letterArray: string[] = letter.split(" ");
   for (let i: number = 0; i < letterArray.length; i = i + 1) {
     result = result + morse[letterArray[i]];
   }
   return result;
-}
+};
 
-console.log(morseCodeTranslator1UseSplitPrac(".... . .-.. .-.. ---"))
-console.log(morseCodeTranslator1UseSplitPrac(".--. -.-- - .... --- -."))
+console.log(morseCodeTranslator1UseSplitPrac(".... . .-.. .-.. ---"));
+console.log(morseCodeTranslator1UseSplitPrac(".--. -.-- - .... --- -."));
