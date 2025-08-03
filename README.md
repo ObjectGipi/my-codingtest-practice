@@ -62,3 +62,4 @@ other: git commit -m "date"
 | 20250715 | [가위 바위 보↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120839) | Lv0 | Programmers | TypeScript |
 | 20250716 | 복습 | Lv0 | Programmers | TypeScript |
 | 20250717 | split 연습 | Lv0 | Lv0 | Custom | TypeScript |
+| 20250718 | [구슬을 나누는 경우의 수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120840) | Lv0 | Programmers | TypeScript |
