@@ -64,3 +64,4 @@ other: git commit -m "date"
 | 20250717 | split 연습 | Lv0 | Lv0 | Custom | TypeScript |
 | 20250718 | [구슬을 나누는 경우의 수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120840) | Lv0 | Programmers | TypeScript |
 | 20250719 | [점의 위치 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120841) | Lv0 | Programmers | TypeScript |
+| 20250720 | [2차원으로 만들기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120842) | Lv0 | Programmers | TypeScript |
