@@ -16,6 +16,7 @@
  * numbers = [1, 2, 3, 4, 5, 6], k = 5 → result = 3
  * numbers = [1, 2, 3], k = 3 → result = 2
  */
+
 const throwBall = (numbers: number[], k: number): number => {
   let alreadyThrowBall: number = 0;
   // 배열을 계속 순환해야하니까 중간식은 "공백"
@@ -37,6 +38,7 @@ console.log(`========================`);
 
 // 아래 수식을 표로 정리해보면 쉽게 이해할 수 있음
 // 배열을 계속 순환해야하는 경우는 인덱스에 "나머지" 연산 자주 사용
+// 왜 -1을 해야하는건지? -> [index]라서
 const throwBallBetter = (numbers: number[], k: number): number => {
   return numbers[((k - 1) * 2) % numbers.length];
 }
